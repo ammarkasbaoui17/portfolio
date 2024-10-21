@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #2e2e2e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Add background gif */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: url('Background.gif') no-repeat center center fixed;
+    background-size: cover; /* Ensures the gif covers the entire screen */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Other styles remain the same */
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8); /* Slightly transparent nav bar */
+}
+
+
+
+.cmd-window {
+    background-color: #1e1e1e;
+    border: 2px solid #000;
+    width: 60%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cmd-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cmd-buttons span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.cmd-buttons .red { background-color: #ff5f56; }
+.cmd-buttons .yellow { background-color: #ffbd2e; }
+cmd-buttons .green { background-color: #27c93f; }
+
+.cmd-title {
+    color: #fff;
+    font-size: 14px;
+}
+
+.cmd-body {
+    background-color: #2e2e2e;
+    padding: 20px;
+    min-height: 150px;
+    font-size: 18px;
+}
+
+.cmd-text {
+    color: #00ff00;
+}
+
+#typewriter {
+    display: inline-block;
+}
+
+/*---------------------projects----------------------------------*/
+
+
+.projects-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.projects-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00ff00;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #3e3e3e;
+    border-radius: 5px;
+}
+
+.project h2 {
+    color: #00ff00;
+}
+
+.project p {
+    color: #ffffff;
+}
+
+/*---------------------contact----------------------------------*/
+
+/* Gray background for the contact page */
+body.contact-page {
+    background-color: #333333; /* A dark gray background */
+}
+
+/* Keep the contact container styling as is */
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.contact-container h1 {
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.contact-container a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}
+/*----------------------about-----------------------------*/
+.about-container {
+    max-width: 800px;
+    margin: 50px auto; /* Change to 'auto' for horizontal centering */
+    padding: 20px;
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.about-container h1, h2 {
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+.about-container p, ul {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.about-container a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+.about-container a:hover {
+    text-decoration: underline;
+}
+
+.about-container ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Add space between the container and the top of the page */
+body {
+    margin-top: 50px; /* Adjust this value to increase/decrease space */
+}
