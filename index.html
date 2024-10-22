@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
+        </div>
+    </div>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -15,7 +37,6 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    
 
     <div class="cmd-window">
         <div class="cmd-header">
@@ -31,6 +52,43 @@
         </div>
     </div>
 
+    <div class="more-about-me">
+        <a href="about.html" class="about-button">More About Me</a>
+    </div>
+
     <script src="script.js"></script>
+    <script>
+        // Function to start typewriter effect
+        function startTypewriter() {
+            typeWriter();  // Assuming typeWriter() is defined in script.js
+        }
+
+        // Check if the user is navigating internally (within the same session)
+        const isInternalNavigation = sessionStorage.getItem("visitedBefore");
+
+        // Only show the loading screen if it's the first visit to the website in the session
+        if (!isInternalNavigation) {
+            // First visit: Show the loading screen
+            window.addEventListener("load", function() {
+                const loadingScreen = document.getElementById("loading-screen");
+                setTimeout(function() {
+                    loadingScreen.style.opacity = "0";
+                    loadingScreen.style.transition = "opacity 1.5s ease";
+    
+                    setTimeout(function() {
+                        loadingScreen.style.display = "none";
+                        startTypewriter();  // Start typewriter after the animation
+                    }, 1500);  // Matches the transition time
+                }, 1500);  // Time for animation to play
+            });
+
+            // Mark the site as visited in sessionStorage (for this session only)
+            sessionStorage.setItem("visitedBefore", "true");
+        } else {
+            // If the user is navigating internally, hide the loading screen and start the typewriter immediately
+            document.getElementById("loading-screen").style.display = "none";
+            startTypewriter();  // Start typewriter immediately
+        }
+    </script>
 </body>
 </html>
