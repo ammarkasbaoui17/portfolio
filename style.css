@@ -15,6 +15,7 @@ body {
     height: 100vh;
 }
 
+/* Navbar positioning and background */
 nav {
     position: absolute;
     top: 0;
@@ -22,6 +23,7 @@ nav {
     background-color: #333;
 }
 
+/* Navbar list styles */
 nav ul {
     list-style: none;
     display: flex;
@@ -29,26 +31,38 @@ nav ul {
     padding: 10px;
 }
 
+/* Navbar list item spacing */
 nav ul li {
     margin: 0 15px;
 }
 
+/* Navigation links: normal state */
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    padding: 10px 20px;   /* Add some padding to make the links bigger */
+    border-radius: 5px;   /* Rounded corners */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 
+/* Softer hover effect: green glow and background change */
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #32cd32; /* Softer lime-green background */
+    box-shadow: 0 0 10px 3px rgba(50, 205, 50, 0.5); /* Softer, more subtle green glow */
+    text-decoration: none; /* Remove underline */
 }
 
-/* Navbar styling */
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+/* Optional: For smaller screens, ensure navbar adjusts correctly */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
 
 
