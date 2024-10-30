@@ -17,52 +17,50 @@ body {
 
 /* Navbar positioning and background */
 nav {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background-color: #333;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #333;
 }
 
 /* Navbar list styles */
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 /* Navbar list item spacing */
 nav ul li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 /* Navigation links: normal state */
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;   /* Add some padding to make the links bigger */
-    border-radius: 5px;   /* Rounded corners */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;   /* Add some padding to make the links bigger */
+  border-radius: 5px;   /* Rounded corners */
+  transition: background-color 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for hover effect */
 }
 
-/* Softer hover effect: green glow and background change */
+/* Shine effect similar to "More About Me" button */
 nav ul li a:hover {
-    background-color: #32cd32; /* Softer lime-green background */
-    box-shadow: 0 0 10px 3px rgba(50, 205, 50, 0.5); /* Softer, more subtle green glow */
-    text-decoration: none; /* Remove underline */
+   background-color: #00cc00; /* Bright green background on hover */
 }
 
 /* Optional: For smaller screens, ensure navbar adjusts correctly */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
 
-    nav ul li {
-        margin: 10px 0;
-    }
+  nav ul li {
+      margin: 10px 0;
+  }
 }
 
 
