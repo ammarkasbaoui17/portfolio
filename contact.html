@@ -27,5 +27,18 @@
         <p>E-mail : <a href="mailto:ammar.kasbaoui@uir.ac.ma">ammar.kasbaoui@uir.ac.ma</a></p>
         <p>Téléphone : <a href="tel:+212691844838">+212 691844838</a></p>
     </div>
+    <script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+
+        // Disable certain keyboard shortcuts (F12, Ctrl+Shift+I)
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'F12' || (event.ctrlKey && event.shiftKey && event.key === 'I')) {
+                event.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>
