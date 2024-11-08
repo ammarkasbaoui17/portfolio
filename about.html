@@ -46,5 +46,18 @@
         <p>Check out my <a href="https://github.com/ammarkasbaoui17" target="_blank">GitHub</a> and <a href="https://www.linkedin.com/in/ammar-kasbaoui-849b74303/" target="_blank">LinkedIn</a> profiles for more details You can also download my <a href="cv.pdf" download>CV</a>.</p>
         
     </div>
+    <script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+
+        // Disable certain keyboard shortcuts (F12, Ctrl+Shift+I)
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'F12' || (event.ctrlKey && event.shiftKey && event.key === 'I')) {
+                event.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>
